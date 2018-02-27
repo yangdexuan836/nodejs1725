@@ -8,17 +8,19 @@ i,em{font-style:normal;}
 .clearfix::after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
 
 body{
+
 	height:100%;
+	background:#000;
 }
-#middle{
+#middle_con{
 	width:10px;
-	height: 100%;
+	height:100%;
 	background:blue;
-	position: relative;
-	vertical-align: middle;
+	
+
 }
-#middle img{
-	position: absolute;
-	left:0;
-	top:49%;
+#middle_con img{
+	display: block;
+	vertical-align: middle;
+
 }

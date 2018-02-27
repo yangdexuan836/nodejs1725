@@ -17,6 +17,14 @@ router.get('/middle', function(req, res, next) {
 router.get('/mainRight', function(req, res, next) {
   res.render('mainRight', { title: 'ECSHOP管理中心right' });
 });
+router.get('/addMerchandise', function(req, res, next) {
+  res.render('addMerchandise', { title: '商品添加' });
+});
+router.get('/productList', function(req, res, next) {
+  res.render('productList', { title: '商品列表' });
+});
+
+
 router.get('/main', function(req, res, next) {
   res.render('main', { title: 'ECSHOP管理中心' });
 });
