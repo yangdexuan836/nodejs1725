@@ -1,0 +1,21 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ ul,ol,li,a{list-style:none;}
+ a,u{text-decoration:none}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:100;}
+b,strong{font-weight:100;}
+i,em{font-style:normal;}
+.clearfix::after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+
+/* top*/
+#nav{
+	width:164px;
+	height:720px;
+	background:pink;
+}
+.nav_con1{
+	width：163px;
+	height:34px;
+	background:blue;
+}

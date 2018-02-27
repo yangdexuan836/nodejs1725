@@ -32,8 +32,10 @@ i,em{font-style:normal;}
 	width:1000px;
 	height: 70px;
 	/* background:pink;*/
-	float:right;
-	padding-top: 5px; 
+
+	position:absolute;
+	right:0;
+	top:5px;
 
 }
 #top .top_con2 li{
@@ -63,18 +65,28 @@ i,em{font-style:normal;}
 #nav li{
 	min-width: 72px;
 	height:41px;
-	padding:0 9px;
+	padding:0 10px;
 	float: left;
+}
+#nav li>span{
+	width:30px;
+	height: 20px;
+	border-radius: 5px;
+	background:#f00;
+	vertical-align: middle;
+}
+#nav li a{
+	color:#fff;
+	line-height: 41px;
+	font-size:16px;
 }
 #nav li a>span{
 	color:#fff;
 	line-height: 41px;
 	font-size:16px;
 }
-#nav li a{
-	color:#fff;
-	line-height: 41px;
-	font-size:16px;
+#nav li a>img{
+vertical-align: middle;
 }
 .muneFG{
 	width:0;
