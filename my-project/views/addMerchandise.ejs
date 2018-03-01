@@ -25,13 +25,14 @@
 			<li>关联文章</li>
 		</ul>
 		<ul class="add_com2">
-			<form >
+		<!--  -->
+			<form id="frm" action="/api/addMerchandise"  method="post" enctype="multipart/form-data" >
 				<li style="display: block;">
 					<table style="width:90%" align="center">
 						<tr style="height: 50px;">
 							<td class="label">商品名称:</td>
 							<td>
-								<input type="text" style="float: left;margin:7px 5px 0 0;background-size: 16px 18px;background-position:98% 50%">
+								<input id="goods_name" name="goods_name" type="text" style="float: left;margin:7px 5px 0 0;background-size: 16px 18px;background-position:98% 50%">
 								<div id="font-color" style="float:left;background-color:rgb(0,204.255) margin:10px 0 0 5px" onclick="" ><img src="/images/color_selecter.gif" alt=""></div>
 								<select name="" id="" style="margin-left:10px">
 									<option value="">字体样式</option>
@@ -59,12 +60,12 @@
 									<option>请选择...</option>
 									<option>请选择...</option>
 								</select>
-								<a href="javascript:;" style="margin:0 5px;font-size:12px;font-weight:400;border-bottom:2px solid #278296;border-right:2px solid #278296;background:#DDEEF2">添加分类</a>
-								<span>
+								<a class="special" href="javascript:;" style="margin:0 5px;font-size:12px;font-weight:400;border-bottom:2px solid #278296;border-right:2px solid #278296;background:#DDEEF2">添加分类</a>
+								<span id="category_add" style="display: none">
 									<input type="text" style="width:50px;" >
 									<a class="special" href="javascript:;">确定</a>
 									<a class="special" href="javascript:;">分类管理</a>
-									<a class="special" href="javascript:;"><<</a>
+									<a class="special pp" href="javascript:;" onclick="hideCateDiv()"><<</a>
 								</span>
 								<span class="require-field">*</span>
 							</td>
@@ -91,12 +92,12 @@
 									<option>请选择...</option>
 									<option>请选择...</option>
 								</select>
-								<a href="javascript:;" style="margin:0 5px;font-size:12px;font-weight:400;border-bottom:2px solid #278296;border-right:2px solid #278296;background:#DDEEF2">添加品牌</a>
-								<span>
+								<a class="special" href="javascript:;" style="margin:0 5px;font-size:12px;font-weight:400;border-bottom:2px solid #278296;border-right:2px solid #278296;background:#DDEEF2">添加品牌</a>
+								<span id="category_add" style="display: none">
 									<input type="text" style="width:50px;" >
 									<a class="special" href="javascript:;">确定</a>
 									<a class="special" href="javascript:;">品牌管理</a>
-									<a class="special" href="javascript:;"><<</a>
+									<a class="special pp" href="javascript:;"><<</a>
 								</span>
 							
 							</td>
@@ -105,7 +106,7 @@
 						<tr>
 							<td class="label">本店售价:</td>
 							<td>
-								<input type="text" size="20">
+								<input id="goods_price" name="goods_price" type="text" size="20">
 								<input type="button"value="按市场价算" style="border:1px solid #ccc;color:#192E32;font-size:12px;">
 								<span class="require-field">*</span>
 							</td>
@@ -177,7 +178,7 @@
 						<tr>
 							<td class="label">上传商品图片:</td>
 							<td>
-								<input type="file" name=""  value="浏览..." size="35">
+								<input id="oImg" type="file" name="img"  value="浏览..." size="35">
 								<img src="/images/no.gif"><br>
 								<input type="text" size="40" placeholder="商品图片外部URL">
 							</td>
@@ -202,7 +203,7 @@
 				<li>7</li>
 				<li>8</li>
 				<div class="button-div">
-					<input type="button" style="width:60px;height: 30px;background:#ff3f3f;padding:5px 15px 5px;color:#fff;border-radius: 5px;margin:5px;outline: none;border:0;" value="确定"><input type="reset" style="width:60px;height: 30px;background:#ff3f3f;padding:5px 15px 5px;color:#fff;border-radius: 5px;margin:5px;outline: none;border:0;" value="重置">
+					<input class="button"  type="button" style="width:60px;height: 30px;background:#ff3f3f;padding:5px 15px 5px;color:#fff;border-radius: 5px;margin:5px;outline: none;border:0;" value="确定"><input class="button" type="reset" style="width:60px;height: 30px;background:#ff3f3f;padding:5px 15px 5px;color:#fff;border-radius: 5px;margin:5px;outline: none;border:0;" value="重置">
 				</div>
 			</form>
 		</ul>
